@@ -26,8 +26,8 @@ class CardItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(image, width: 130),
-            Gap(10),
+            Center(child: Image.asset(image, width: 120, height: 120)),
+            Gap(15),
             CustomText(text: title, weight: FontWeight.bold),
             CustomText(text: desc),
             SizedBox(
@@ -38,7 +38,10 @@ class CardItem extends StatelessWidget {
                   Gap(2),
                   CustomText(text: rate),
                   Spacer(),
-                  Icon(CupertinoIcons.heart_fill, color: AppColors.primaryColor),
+                  Icon(
+                    CupertinoIcons.heart_fill,
+                    color: AppColors.primaryColor,
+                  ),
                 ],
               ),
             ),

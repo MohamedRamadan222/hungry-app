@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hungry_app/root.dart';
+import 'package:hungry_app/splash_screen.dart';
 
 void main() {
+
   runApp(const MyApp());
 }
 
@@ -14,9 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'Hungry',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
+        splashColor: Colors.transparent,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Root(),
+      home: const SplashView(),
     );
   }
 }

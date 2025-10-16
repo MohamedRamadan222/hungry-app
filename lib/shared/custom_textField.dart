@@ -24,7 +24,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   @override
   void initState() {
-    _obscureText = !widget.isPassword;
+    _obscureText = widget.isPassword;
     super.initState();
   }
 
@@ -51,16 +51,17 @@ class _CustomTextFieldState extends State<CustomTextField> {
         suffixIcon: widget.isPassword
             ? GestureDetector(
                 onTap: _togglePassword,
-                child: Icon(CupertinoIcons.eye),
+                child: Icon(CupertinoIcons.eye, color: AppColors.primaryColor),
               )
             : null,
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: AppColors.primaryColor),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.white),
+          borderSide: BorderSide(color: AppColors.primaryColor),
         ),
         hintText: widget.hint,
+        hintStyle: TextStyle(color: AppColors.primaryColor),
         fillColor: Colors.white,
         filled: true,
       ),

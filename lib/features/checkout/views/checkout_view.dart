@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:hungry_app/core/constants/app_colors.dart';
 import 'package:hungry_app/shared/custom_text.dart';
 import '../../../shared/custom_button.dart';
 import '../widgets/order_details_widget.dart';
