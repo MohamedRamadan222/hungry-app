@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hungry_app/splash_screen.dart';
 
 void main() {
-
   runApp(const MyApp());
 }
 
